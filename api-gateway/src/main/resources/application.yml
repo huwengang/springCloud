@@ -16,6 +16,7 @@ eureka:
 #自定义路由映射
 zuul:
   routes:
-    order-service: /apigateway-order/**
-    product-service: /apigateway-product/**
+    order-service: /apigateway/order/**
+    product-service: /apigateway/product/**
   ignored-patterns: /*-service/**
+  sensitive-headers:

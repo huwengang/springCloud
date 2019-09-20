@@ -11,3 +11,9 @@ eureka:
 spring:
   application:
     name: product-service
+  zipkin:
+    base-url: http://192.168.1.88:9411/
+    #配置采用百分比
+    sleuth:
+      sampler:
+        probability: 1
