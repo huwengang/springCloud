@@ -1,22 +1,10 @@
 #server:
 #  port: 8781
 
-#注册到服务
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-
 #项目名称
 spring:
   application:
     name: order-service
-  zipkin:
-    base-url: http://127.0.0.1:9411/
-    #配置采用百分比
-  sleuth:
-    sampler:
-      probability: 1
   cloud:
     config:
       discovery:
