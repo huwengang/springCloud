@@ -1,5 +1,13 @@
 #server:
 #  port: 8781
+#注册到服务
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://172.21.0.16:8761/eureka/
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
 
 #项目名称
 spring:
@@ -9,7 +17,7 @@ spring:
     config:
       discovery:
         enabled: true
-        service-id: CONFIG-SERVER
+        service-id: config-server
       #profile: test
       label: master
 
