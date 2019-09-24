@@ -11,7 +11,7 @@ spring:
         enabled: true
         service-id: CONFIG-SERVER
       #profile: test
-      label: test
+      label: master
 
 #feign配置
 #feign:
